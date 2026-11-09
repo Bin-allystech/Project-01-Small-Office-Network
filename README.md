@@ -46,7 +46,7 @@ The network consists of:
 ## 5. IP Addressing Scheme
 
 | Department | Device | IP Address | Subnet Mask | Gateway |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
 | Primary Web Server | `192.168.1.10` | `255.255.255.0` | Hosts the main frontend application |
 | PostgreSQL Database | `192.168.1.20` | `255.255.255.0` | Production database instance |
 | API Gateway | `10.0.0.5` | `255.255.0.0` | Manages external traffic routing |
