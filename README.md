@@ -47,21 +47,34 @@ The network consists of:
 
 | Department | Device | IP Address | Subnet Mask | Gateway |
 | :--- | :--- | :--- | :--- | :--- |
-| ICT | PC0 | 192.168.10.10 | 255.255.255.128 | 192.168.10.1 |
-| ICT | PC1 | 192.168.10.11 | 255.255.255.128 | 192.168.10.1 |
-| ICT | Laptop0 | 192.168.10.12 | 255.255.255.128 | 192.168.10.1 |
-| ICT | Printer1 | 192.168.10.12 | 255.255.255.128 | 192.168.10.1 |
-| Administration | PC2 | 192.168.10.10 | 255.255.255.128 | 192.168.10.129 |
-| Administration | PC3 | 192.168.10.11 | 255.255.255.128 | 192.168.10.129 |
-| Administration | PC4 | 192.168.10.12 | 255.255.255.128 | 192.168.10.129 |
-| Administration | Printer0 | 192.168.10.12 | 255.255.255.128 | 192.168.10.129 |
+| ICT | PC0 | 192.168.10.2 | 255.255.255.128 | 192.168.10.1 |
+| ICT | PC1 | 192.168.10.3 | 255.255.255.128 | 192.168.10.1 |
+| ICT | Laptop0 | 192.168.10.4 | 255.255.255.128 | 192.168.10.1 |
+| ICT | Printer1 | 192.168.10.5 | 255.255.255.128 | 192.168.10.1 |
+| Administration | PC2 | 192.168.10.131 | 255.255.255.128 | 192.168.10.129 |
+| Administration | PC3 | 192.168.10.132 | 255.255.255.128 | 192.168.10.129 |
+| Administration | PC4 | 192.168.10.133 | 255.255.255.128 | 192.168.10.129 |
+| Administration | Printer0 | 192.168.10.130 | 255.255.255.128 | 192.168.10.129 |
 
 
 ## 6. Router Configuration
 
 The router was configured with two Ethernet interfaces to connect the Administration and ICT networks.
 
-[Insert your actual Cisco IOS configuration commands here.]
+```routeros
+Router> enable
+Router# configure terminal
+Router(config)# hostname CORE_ROUTER
+CORE_ROUTER(config)# interface GigabitEthernet0/0
+CORE_ROUTER(config-if)# ip address 192.168.10.1 255.255.255.128
+CORE_ROUTER(config-if)# no shutdown
+CORE_ROUTER(config-if)# exit
+CORE_ROUTER(config)# interface GigabitEthernet0/1
+CORE_ROUTER(config-if)# ip address 192.168.10.129 255.255.255.128
+CORE_ROUTER(config-if)# no shutdown
+CORE_ROUTER(config-if)# exit
+CORE_ROUTER(config)# do write memory
+```
 
 ## 7. Network Testing and Verification
 
