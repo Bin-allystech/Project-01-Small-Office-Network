@@ -35,6 +35,7 @@ The network consists of:
 - Two Cisco 2960 switches.
 - Four desktop computers.
 - One Laptop Computer
+- Two Network Printers
 - Ethernet connections.
 
 **Network topology screenshot:**
@@ -44,7 +45,7 @@ The network consists of:
 
 ## 5. IP Addressing Scheme
 
-| Device/Service Name | IP Address | Subnet Mask | Role / Description |
+| Department | Device | IP Address | Subnet Mask | Gateway |
 | :--- | :--- | :--- | :--- |
 | Primary Web Server | `192.168.1.10` | `255.255.255.0` | Hosts the main frontend application |
 | PostgreSQL Database | `192.168.1.20` | `255.255.255.0` | Production database instance |
