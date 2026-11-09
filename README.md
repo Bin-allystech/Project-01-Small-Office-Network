@@ -47,10 +47,14 @@ The network consists of:
 
 | Department | Device | IP Address | Subnet Mask | Gateway |
 | :--- | :--- | :--- | :--- | :--- |
-| Primary Web Server | `192.168.1.10` | `255.255.255.0` | Hosts the main frontend application |
-| PostgreSQL Database | `192.168.1.20` | `255.255.255.0` | Production database instance |
-| API Gateway | `10.0.0.5` | `255.255.0.0` | Manages external traffic routing |
-| GitHub Pages Apex (A)*| `185.199.108.153` | N/A | GitHub custom domain configuration [^1] |
+| ICT | PC0 | 192.168.10.10 | 255.255.255.128 | 192.168.10.1 |
+| ICT | PC1 | 192.168.10.11 | 255.255.255.128 | 192.168.10.1 |
+| ICT | Laptop0 | 192.168.10.12 | 255.255.255.128 | 192.168.10.1 |
+| ICT | Printer1 | 192.168.10.12 | 255.255.255.128 | 192.168.10.1 |
+| Administration | PC2 | 192.168.10.10 | 255.255.255.128 | 192.168.10.129 |
+| Administration | PC3 | 192.168.10.11 | 255.255.255.128 | 192.168.10.129 |
+| Administration | PC4 | 192.168.10.12 | 255.255.255.128 | 192.168.10.129 |
+| Administration | Printer0 | 192.168.10.12 | 255.255.255.128 | 192.168.10.129 |
 
 
 ## 6. Router Configuration
