@@ -116,4 +116,4 @@ The repository contains:
 
 This project provided practical experience in designing and implementing a small office network. It strengthened my understanding of basic network infrastructure and established a foundation for more advanced networking projects.
 
-**Project Status:** [In Progress]
+**Project Status:** [Completed]
