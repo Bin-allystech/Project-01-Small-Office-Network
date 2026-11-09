@@ -73,7 +73,7 @@ CORE_ROUTER(config)# interface GigabitEthernet0/1
 CORE_ROUTER(config-if)# ip address 192.168.10.129 255.255.255.128
 CORE_ROUTER(config-if)# no shutdown
 CORE_ROUTER(config-if)# exit
-CORE_ROUTER(config)# do write memory
+CORE_ROUTER(config)# write memory
 ```
 
 ## 7. Network Testing and Verification
@@ -85,21 +85,16 @@ Connectivity was tested using the following commands:
 - `show ip route` – to inspect the routing table.
 - `show arp` – to examine IP-to-MAC address mappings.
 
-[Insert screenshots showing your actual successful ping tests.]
+<img width="697" height="734" alt="ping" src="https://github.com/user-attachments/assets/a195d4c0-4a72-4cac-ae14-0c33220e1bfe" />
+
 
 ## 8. Troubleshooting
-
-Document the problems encountered during implementation and how they were resolved.
-
-Examples include:
 
 - Incorrect IP address configuration.
 - Wrong default gateway.
 - Router interface shutdown.
 - Incorrect network cable connections.
 - Duplicate IP addresses.
-
-Only include problems that you actually encountered or deliberately simulated.
 
 ## 9. Skills and Knowledge Gained
 
