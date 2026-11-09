@@ -44,14 +44,13 @@ The network consists of:
 
 ## 5. IP Addressing Scheme
 
-| Department     | Device  | IP Address    | Subnet Mask     | Gateway      |
+| Device/Service Name | IP Address | Subnet Mask | Role / Description |
+| :--- | :--- | :--- | :--- |
+| Primary Web Server | `192.168.1.10` | `255.255.255.0` | Hosts the main frontend application |
+| PostgreSQL Database | `192.168.1.20` | `255.255.255.0` | Production database instance |
+| API Gateway | `10.0.0.5` | `255.255.0.0` | Manages external traffic routing |
+| GitHub Pages Apex (A)*| `185.199.108.153` | N/A | GitHub custom domain configuration [^1] |
 
-| Administration | PC1     | 192.168.10.10 | 255.255.255.128 | 192.168.10.1 |
-| Administration | PC2     | 192.168.10.11 | 255.255.255.128 | 192.168.10.1 |
-| Administration | PC3     | 192.168.10.12 | 255.255.255.128 | 192.168.10.1 |
-| ICT            | PC1     | 192.168.20.10 | 255.255.255.128 | 192.168.20.1 |
-| ICT            | PC2     | 192.168.20.11 | 255.255.255.128 | 192.168.20.1 |
-| ICT            | PC3     | 192.168.20.12 | 255.255.255.128 | 192.168.20.1 |
 
 ## 6. Router Configuration
 
